@@ -4,10 +4,17 @@
 // un programa que pregunte al usuario su nombre y sexo y muestre por pantalla el
 // grupo al que corresponde.
 
-let sexo = prompt(`Ingrese su sexo`)
-let nombre = /^[am]/i;
+let nombre = prompt("Ingrese su nombre");
+let sexo = prompt(`Ingrese su sexo (M para mujer y H para hombre)`).toUpperCase()
+let grupo
 
-if (sexo == "mujer",nombre.test) {
-  console.log(`El texto empieza con a`)
+if (sexo === "M" || sexo === "H") {
+  if ((sexo === "M" && nombre.toUpperCase() < "M") || (sexo === "H" && nombre.toUpperCase() < "N")) {
+    grupo = "A"
+  } else {
+    grupo = "B"
+  }
+  window.alert(`Hola ${nombre}, pertenece al grupo ${grupo}`)
+}else {
+  window.alert("Por favor ingresar M para mujer y H para hombre")
 }
-else console .log(`El texto no empieza con a`)
