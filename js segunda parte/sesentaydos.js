@@ -2,7 +2,7 @@
 
 let palabra = prompt ("Ingrese una palabra")
 
-for (let cont = 0; cont <10 ; palabra++) {
+for (let cont = 0; cont < 10 ; palabra++) {
     console.log(palabra)
     
 }
