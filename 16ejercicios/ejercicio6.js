@@ -9,4 +9,5 @@ function tabla() {
     }
   }
 }
-let Ingrese = tabla()
+let num = parseInt(prompt("Ingrese un numero"))
+let Ingrese = tabla(num)
